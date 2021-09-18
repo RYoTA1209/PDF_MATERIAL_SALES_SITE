@@ -41,3 +41,12 @@ python app.py
 
 4. ブラウザで[http://localhost:5000](http://localhost:5000)にアクセス
 
+5. dbの作成  
+  pythonの対話型シェルを開き以下のコマンドを入力
+```python
+>>> from app import db
+>>> db.create_all()
+```
+  dbを更新する時は、一旦`app.db`を削除してもう一度上のコマンドを入力！
+
+
